@@ -1,0 +1,7 @@
+ATT GÖRA:
+
+JAVASCRIPT:
+Se till så att ny bild ALLTID genereras av knapptryck. Just nu verkar knappen ha en öppna-stäng-funktion.
+
+CSS MOBILE:
+Se till så att genererad api-bild MAX är lika stor som skärmen
