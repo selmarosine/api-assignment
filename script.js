@@ -23,3 +23,10 @@ function fetchCats(apiKey) {
 
 const apiKey = 'live_tJPgGwszXakjsu3btk73VsiX6raq5Cp5gqA8PCjyGSp0xeSSCRzhzcE3OnLCXueK';
 fetchCats(apiKey);
+
+/** Knapp för att generera en bild **/
+const knapp = document.querySelector('button')
+knapp = addEventListener('click', () => {
+    button.classList.toggle("active");
+    fetchCats.classList.toggle("active");
+})
