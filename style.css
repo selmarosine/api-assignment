@@ -1,5 +1,30 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
 body {
     background-color: lightgreen;
+}
+
+header {
+    display: flex;
+}
+
+.nav {
+    background-color: pink;
+    top:0;
+    left:0;
+    width:100%;
+    height:50px;
+    margin-bottom:30px;
+    padding:10px; /*selma, fixa och centrera detta*/
+}
+
+.nav h2 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
 }
 
 .image-container {
@@ -28,4 +53,11 @@ body {
 
 .catImage.active {
     display: block;
+}
+
+@media (min-width:501px) {
+    .catImage.active {
+        width:700px;
+        height:auto;
+    }
 }
