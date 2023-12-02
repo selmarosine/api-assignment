@@ -33,10 +33,3 @@ document.addEventListener('DOMContentLoaded', function () {
         fetchCats(apiKey);
     })
 })
-
-
-/*const knapp = document.querySelector('button')
-knapp = addEventListener('click', () => {
-    button.classList.toggle("active");
-    fetchCats.classList.toggle("active");
-}) */

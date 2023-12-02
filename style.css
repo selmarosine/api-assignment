@@ -9,6 +9,10 @@ body {
     min-height: 100vh;
 }
 
+
+
+
+/** HEADER **/
 header {
     display: flex;
 }
@@ -46,7 +50,15 @@ header {
     cursor: pointer;
 }
 
-.image-container {
+
+
+
+/* API, KNAPP, CASPER */
+main {
+    background-color: blue;
+}
+
+#image-container {
     display: flex;
 }
 
@@ -76,6 +88,14 @@ header {
     margin-bottom:100px;
 }
 
+#casper {
+    display: block;
+}
+
+#casper.active {
+    display: none;
+}
+
 .catImage {
     display: none;
 }
@@ -84,6 +104,10 @@ header {
     display: block;
 }
 
+
+
+
+/***** FOOTER ******/
 footer {
     background-color: black;
     color:#fff;
@@ -114,9 +138,18 @@ footer .copy {
     cursor: pointer;
 }
 
+
+
+
+/** STYLE SOM BARA GÄLLER DESKTOP **/
 @media (min-width:501px) {
     .catImage.active {
         width:700px;
+        height:auto;
+    }
+
+    #casper {
+        width:500px;
         height:auto;
     }
 }
