@@ -19,12 +19,13 @@ body {
     border-radius: 15px;
     background-color: pink;
     cursor: pointer;
+    margin-bottom:50px;
 }
 
 .catImage {
     display: none;
 }
 
-.catImage:active {
+.catImage.active {
     display: block;
 }
