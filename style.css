@@ -53,9 +53,29 @@ header {
 
 
 
-/* API, KNAPP, CASPER */
+/* MAIN, CASPER, API, KNAPP*/
 main {
-    background-color: blue;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+
+    background-color: cornflowerblue;
+}
+
+.general-info {
+    width:auto;
+    height:100%;
+    margin-left:2%;
+    padding:5px;
+    background-color: lightsalmon;
+
+    flex-direction: column;
+}
+
+.general-info p {
+    width:100%;
+    height:auto;
+    background-color: aqua;
 }
 
 #image-container {
