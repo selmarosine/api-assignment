@@ -1,7 +1,7 @@
 /******** STYLE SOM BARA GÄLLER MOBIL / TABLET ********/
 
 @media (max-width: 900px) {
-/* MAIN */
+  /* MAIN */
   main {
     display: flex;
     flex-direction: column;
@@ -22,15 +22,27 @@
   .general-info p {
   }
 
+  /* BUTTON, API, KATTBILDER */
+  #image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-  /* API, KATTBILDER */
+    padding: 0;
+  }
+
+  .button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
   .cat-container {
-    
     height: 80vh;
   }
 
   #catImage {
-    width: 100vh;
+    max-width: 100% !important;
     height: auto;
   }
 
@@ -38,7 +50,6 @@
     width: 30vh;
     height: auto;
   }
-
 
   /* FOOTER */
   footer {
