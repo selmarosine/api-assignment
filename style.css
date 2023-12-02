@@ -1,3 +1,18 @@
 body {
     background-color: lightgreen;
 }
+
+.image-container {
+    display: flex;
+}
+
+.api {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.catImage {
+
+}
