@@ -1,6 +1,11 @@
 /******** STYLE SOM BARA GÄLLER MOBIL / TABLET ********/
 
 @media (max-width: 900px) {
+  /*HEADER, NAV*/
+  .nav h2, .nav .nav-links { 
+    font-size: 16px;
+  }
+
   /* MAIN */
   main {
     display: flex;
@@ -23,11 +28,11 @@
     width: 150px;
     height: 50px;
     border-radius: 15px;
-    border:2px solid black;
+    border: 2px solid black;
     background-color: pink;
     cursor: pointer;
     margin-bottom: 50px;
-  
+
     display: flex;
     align-items: center;
     justify-content: center;
@@ -42,7 +47,7 @@
   }
 
   .button.mobile-tablet {
-    display:flex;
+    display: flex;
   }
 
   #casper {
@@ -51,7 +56,7 @@
   }
 
   .general-info p {
-    padding:5px;
+    padding: 5px;
     margin-left: 4px;
   }
 
@@ -69,14 +74,14 @@
     justify-content: center;
     align-items: center;
 
-    margin-top: 20px;;
+    margin-top: 20px;
   }
 
   .cat-container {
-    max-width: 80vh; 
+    max-width: 80vh;
     max-height: 80vh;
     overflow: hidden;
-    margin-top:-15px;
+    margin-top: -15px;
   }
 
   .catImage.active {
@@ -85,12 +90,13 @@
   }
 
   #catImage {
-    width:100%; /*80vh*/
+    width: 100%; /*80vh*/
     height: auto;
   }
 
   /* FOOTER */
   footer {
     display: flex;
+    font-size: 13px;
   }
 }
