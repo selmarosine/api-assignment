@@ -33,6 +33,10 @@ header {
   margin-bottom: 30px;
   padding: 10px; /*selma, fixa och centrera detta*/
   border-bottom:3px solid black;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .nav h2 {

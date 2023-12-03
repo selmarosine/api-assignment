@@ -1,12 +1,8 @@
 ATT GÖRA:
 
-CSS:
-Fixa footern så den ligger som den ska
-
-CSS MOBILE:
-Se till så att genererad api-bild MAX är lika stor som skärmen
-
-
 LÖST:
 JAVASCRIPT:
 Se till så att ny bild ALLTID genereras av knapptryck. Just nu verkar knappen ha en öppna-stäng-funktion.
+
+CSS:
+Fixa footern så den ligger som den ska

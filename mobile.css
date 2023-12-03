@@ -91,7 +91,6 @@
 
   /* FOOTER */
   footer {
-    /*selma fixa sen*/
-    display: none;
+    display: flex;
   }
 }
