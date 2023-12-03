@@ -19,6 +19,27 @@
     height: auto;
   }
 
+  .button {
+    width: 150px;
+    height: 50px;
+    border-radius: 15px;
+    background-color: pink;
+    cursor: pointer;
+    margin-bottom: 50px;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .button.desktop {
+    display: none;
+  }
+
+  .button.mobile-tablet {
+    display:flex;
+  }
+
   #casper {
     width: 30vh;
     height: auto;

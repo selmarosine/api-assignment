@@ -82,19 +82,6 @@ main {
   flex-direction: column;
 }
 
-.button {
-  width: 150px;
-  height: 50px;
-  border-radius: 15px;
-  background-color: pink;
-  cursor: pointer;
-  margin-bottom: 50px;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
 .cat-container {
   background-color: lightblue;
   margin-bottom: 100px;
@@ -151,8 +138,25 @@ footer .copy {
     width: 350px;
   }
 
-  .general-info p {
-    
+  .button {
+    width: 150px;
+    height: 50px;
+    border-radius: 15px;
+    background-color: pink;
+    cursor: pointer;
+    margin-bottom: 50px;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .button.desktop {
+    display: flex;
+  }
+
+  .button.mobile-tablet {
+    display:none;
   }
 
   #image-container {

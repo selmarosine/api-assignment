@@ -26,10 +26,16 @@ function fetchCats(apiKey) {
 document.addEventListener('DOMContentLoaded', function () {
     const apiKey = 'live_tJPgGwszXakjsu3btk73VsiX6raq5Cp5gqA8PCjyGSp0xeSSCRzhzcE3OnLCXueK';
 
-    const knapp = document.querySelector('.button');
+    const desktop = document.querySelector('.desktop');
+    const mobileTablet = document.querySelector('.mobile-tablet');
     const catImage = document.getElementById('catImage');
 
-    knapp.addEventListener('click', () => {
+    desktop.addEventListener('click', () => {
+        catImage.classList.toggle("active");
+        fetchCats(apiKey);
+    });
+
+    mobileTablet.addEventListener('click', () => {
         catImage.classList.toggle("active");
         fetchCats(apiKey);
     });
