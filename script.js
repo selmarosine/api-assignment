@@ -5,18 +5,19 @@ function fetchCats(apiKey) {
         headers: {
             'x-api-key': apiKey,
         },
+        cache: 'no-store',
     })
-    .then(Response => {
-        if(!Response.ok) {
+    .then(response => {
+        if (!response.ok) {
             throw new Error('Ett fel uppstod');
         }
-        return Response.json();
+        return response.json();
     })
     .then(data => {
         const catImageUrl = data[0].url;
         document.getElementById('catImage').src = catImageUrl;
     })
-    .catch (error => {
+    .catch(error => {
         console.error('Error:', error);
     });
 }
@@ -31,5 +32,5 @@ document.addEventListener('DOMContentLoaded', function () {
     knapp.addEventListener('click', () => {
         catImage.classList.toggle("active");
         fetchCats(apiKey);
-    })
-})
+    });
+});

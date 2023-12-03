@@ -105,10 +105,6 @@ main {
   display: block;
 }
 
-.catImage {
-  display: none;
-}
-
 .catImage.active {
   display: block;
 }
@@ -147,12 +143,16 @@ footer .copy {
 /** STYLE SOM BARA GÄLLER DESKTOP **/
 @media (min-width: 901px) {
   main {
-    background-color: black;
+    
   }
 
   .general-info {
     margin-left: 2%;
     padding: 5px;
+  }
+
+  #image-container {
+    margin-right: 2%;
   }
 
   .cat-container {
