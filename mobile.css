@@ -13,13 +13,20 @@
     justify-content: center;
     align-items: flex-start;
     left: 0;
-    padding: 3px;
 
-    width: 100%;
+    padding: 12px;
+    width: auto;
+    height: auto;
+  }
+
+  #casper {
+    width: 30vh;
     height: auto;
   }
 
   .general-info p {
+    padding:5px;
+    margin-left: 4px;
   }
 
   /* BUTTON, API, KATTBILDER */
@@ -35,19 +42,24 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
+    margin-top: 20px;;
   }
 
   .cat-container {
-    height: 80vh;
+    max-width: 80vh; 
+    max-height: 80vh;
+    overflow: hidden;
+    margin-top:-15px;
   }
 
-  #catImage {
-    max-width: 100% !important;
+  .catImage.active {
+    width: 100% !important;
     height: auto;
   }
 
-  #casper {
-    width: 30vh;
+  #catImage {
+    width:100%; /*80vh*/
     height: auto;
   }
 
