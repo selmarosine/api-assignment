@@ -33,7 +33,7 @@ header {
   width: 100%;
   height: 50px;
   margin-bottom: 30px;
-  padding: 10px; /*selma, fixa och centrera detta*/
+  padding: 10px; 
   border-bottom:3px solid black;
 
   display: flex;
@@ -44,7 +44,7 @@ header {
 .nav h2 {
   display: flex;
   justify-content: flex-start;
-  align-items: center; /*selma fixa placering av titel*/
+  align-items: center; 
 
   margin-left: 10px;
   cursor: pointer;
