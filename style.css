@@ -1,10 +1,17 @@
+:root {
+  --light-color: #fdf4f5;
+  --dark-color: #313131;
+  --primary-color: #e8a0bf;
+  --accent-color: #ba90c6;
+  --shadow-color: #c0dbea;
+}
+
 * {
   padding: 0;
   margin: 0;
 }
 
 body {
-  background-color: lightgreen;
   position: relative;
   min-height: 100vh;
 }
@@ -12,16 +19,20 @@ body {
 /** HEADER **/
 header {
   display: flex;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
 }
 
 .nav {
-  background-color: pink;
+  background-color: var(--primary-color);
   top: 0;
   left: 0;
   width: 100%;
   height: 50px;
   margin-bottom: 30px;
   padding: 10px; /*selma, fixa och centrera detta*/
+  border-bottom:3px solid black;
 }
 
 .nav h2 {
@@ -51,32 +62,28 @@ header {
 main {
   display: flex;
   flex-direction: row;
-
-  background-color: cornflowerblue;
 }
 
 .general-info {
   height: 100%;
-  background-color: lightsalmon;
-
+  border: 3px solid var(--accent-color);
   flex-direction: column;
 }
 
 .general-info p {
   width: 100%;
   height: auto;
-  background-color: aqua;
+  background-color: var(--shadow-color);
 }
 
 /* API */
 .button:hover {
-  background-color: lightgray;
+  background-color: var(--accent-color);
   transition: 0.6s ease-in-out;
 }
 
 #image-container {
   display: flex;
-  background-color: blanchedalmond;
 }
 
 .api {
@@ -87,7 +94,6 @@ main {
 }
 
 .cat-container {
-  background-color: lightblue;
   margin-bottom: 100px;
 }
 
@@ -101,7 +107,7 @@ main {
 
 /***** FOOTER ******/
 footer {
-  background-color: black;
+  background-color: var(--dark-color);
   color: #fff;
   width: 100%;
   height: 70px;
@@ -133,7 +139,7 @@ footer .copy {
 /** STYLE SOM BARA GÄLLER DESKTOP **/
 @media (min-width: 901px) {
   main {
-    margin-top:-40px;
+    margin-top: -20px;
     justify-content: space-evenly;
   }
 
@@ -142,7 +148,7 @@ footer .copy {
     width: 60vh;
     display: flex;
     flex-direction: row;
-    gap:2px;
+    gap: 2px;
   }
 
   #casper {
@@ -155,20 +161,20 @@ footer .copy {
     width: 225px;
     height: 60px;
     border-radius: 15px;
-    border:2px solid black;
-    background-color: pink;
+    border: 2px solid black;
+    background-color: var(--primary-color);
     cursor: pointer;
     margin-bottom: 50px;
-  
+
     display: flex;
     align-items: center;
     justify-content: center;
   }
 
   .button-area-desktop {
-    height:auto;
-    margin-top:-15px;
-    
+    height: auto;
+    margin-top: -5px;
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -179,14 +185,11 @@ footer .copy {
   }
 
   .button.mobile-tablet {
-    display:none;
-  }
-
-  #image-container {
+    display: none;
   }
 
   .cat-container {
-    width: 60vh; 
+    width: 60vh;
     height: 80vh;
   }
 
