@@ -70,6 +70,11 @@ main {
 }
 
 /* API */
+.button:hover {
+  background-color: lightgray;
+  transition: 0.6s ease-in-out;
+}
+
 #image-container {
   display: flex;
   background-color: blanchedalmond;
@@ -129,7 +134,7 @@ footer .copy {
 /** STYLE SOM BARA GÄLLER DESKTOP **/
 @media (min-width: 901px) {
   main {
-    
+    margin-top:-40px;
   }
 
   .general-info {
@@ -139,9 +144,10 @@ footer .copy {
   }
 
   .button {
-    width: 150px;
-    height: 50px;
+    width: 225px;
+    height: 60px;
     border-radius: 15px;
+    border:2px solid black;
     background-color: pink;
     cursor: pointer;
     margin-bottom: 50px;
@@ -149,6 +155,15 @@ footer .copy {
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+
+  .button-area-desktop {
+    height:auto;
+    margin-top:-15px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .button.desktop {
