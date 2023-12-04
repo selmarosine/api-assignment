@@ -52,7 +52,8 @@
   }
 
   #casper {
-    width: 30vh;
+   /*  width: 30vh;  changed this to VW*/
+    width: 30vw;
     height: auto;
   }
 
@@ -80,7 +81,8 @@
   }
 
   .cat-container {
-    max-width: 80vh;
+    /* max-width: 80vh;  changed this to VW and decreased it to be able to fit a total of 100vw since casper is 30 this element can be max 70*/
+    max-width: 70vw;
     max-height: 80vh;
     overflow: hidden;
     margin-top: -15px;
@@ -88,12 +90,12 @@
 
   .catImage.active {
     width: 100% !important;
-    height: auto;
+    /* height: auto;  no need for auto since its default*/
   }
 
   #catImage {
     width: 100%; /*80vh*/
-    height: auto;
+    /* height: auto; no need for auto since thats default */
   }
 
   /* FOOTER */

@@ -12,8 +12,13 @@
 }
 
 body {
-  position: relative;
+  /*removed height: 100vh; added this to make sure that the footer always is at the bottom of the page no matter what*/
+  display: flex;
+  flex-direction: column;
   min-height: 100vh;
+  /*end of changes*/
+
+  position: relative;  
   font-family: "Raleway";
 }
 
@@ -77,7 +82,7 @@ main {
 }
 
 .general-info p {
-  width: 100%;
+  /* width: 100%  Block element always takes up 100% of their width*/
   height: auto;
   background-color: var(--shadow-color);
 }
@@ -100,7 +105,7 @@ main {
 }
 
 .cat-container {
-  margin-bottom: 100px;
+  /* margin-bottom: 100px This does nothing for you if you have an absolut property on the footer. in other words there are nothing under this element that it can have a margin against*/
 }
 
 #casper {
@@ -115,13 +120,14 @@ main {
 footer {
   background-color: var(--dark-color);
   color: #fff;
-  width: 100%;
+  /*Removed width: 100%; Since its default 100% */
+  margin-top: auto;/*this will make the footer be positioned at the bottom of the page no matter what*/
   height: 70px;
   bottom: 0;
 
   display: flex;
   justify-content: space-between;
-  position: absolute;
+  /* removed position: absolute; No need for this now*/
 }
 
 footer .copy {
@@ -151,14 +157,16 @@ footer .copy {
 
   .general-info {
     padding: 5px;
-    width: 60vh;
+    /* width: 60vh;  changed this to VW and decreased to 50 to fit the total vw*/
+    width: 50vw;
     display: flex;
     flex-direction: row;
     gap: 2px;
   }
 
   #casper {
-    width: 300px;
+    /* width: 300px;  changed this to dynamic value*/
+    width: 18vw;
     height: auto;
   }
 
@@ -178,7 +186,7 @@ footer .copy {
   }
 
   .button-area-desktop {
-    height: auto;
+    /* height: auto  auto is defaultvalue. Therefore you dont have to add height: auto since it is auto from the beginning*;*/
     margin-top: -5px;
 
     display: flex;
@@ -195,17 +203,19 @@ footer .copy {
   }
 
   .cat-container {
-    width: 60vh;
-    height: 80vh;
+    /*changed to VW and decreased the width to be able to fit 100vw total*/
+    width: 50vw;
+    /* height: 80vh; removed this and added restriction to the image instead*/
   }
 
   .catImage.active {
     width: 700px;
-    height: auto;
+    /* eight: auto no need for auto*/
   }
 
   #catImage {
-    width: 60vh;
-    height: auto;
+    width: 50vw;
+    /* height: auto; No need for auto since its default Althoug I think it could be a good idea to restrict the max-height becouse some of the images are really long*/
+    max-height: 80vh;/*Something like this Now if the image is longer and threathen to go past the footer it cant, it will get compressed instead*/
   }
 }
