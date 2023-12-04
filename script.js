@@ -22,7 +22,7 @@ function fetchCats(apiKey) {
     });
 }
 
-/** Knapp för att generera en bild **/
+/** Knappar för att generera en bild **/
 document.addEventListener('DOMContentLoaded', function () {
     const apiKey = 'live_tJPgGwszXakjsu3btk73VsiX6raq5Cp5gqA8PCjyGSp0xeSSCRzhzcE3OnLCXueK';
 

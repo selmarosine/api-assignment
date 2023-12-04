@@ -2,7 +2,8 @@
 
 @media (max-width: 900px) {
   /*HEADER, NAV*/
-  .nav h2, .nav .nav-links { 
+  .nav h2,
+  .nav .nav-links {
     font-size: 16px;
   }
 
