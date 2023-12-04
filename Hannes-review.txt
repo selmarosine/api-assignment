@@ -1,0 +1,47 @@
+##Hello Selma!
+
+First off! Nice work! I love cats aswell. In fact I have two off them here at home! I like the overall style off your site.
+I dont like doing this, you know, being critical on purpose. But I guess we have to do it. Just keep in mind that many off
+theese things Im about to say are things that Hans have said to me on earlier assignments. So its absolutly nothing personal
+or anything off that kind. 
+
+1. First off, I noticed the page kinda breaks a little  between 1220px and 899px. So mayby adding a mediaquery to 
+address that issue. The problem as I see it is that the img "Casper" is set to an fixed width, This leaves not enough
+room for both img "casper" and img "catImage". Mayby instead of using fixed value, use a dynamic value? Or change 
+up the mediaquerys to flip display sooner between your mobile and desktop. So it flips before it breaks. 
+
+2. Footer width: 100%; Footer is a block element and therefor its 100% width by default. So unless you change its 
+display property or by any other way change this you shouldnt have to specify 100% width. Now with that said, I do understand
+why you have done it. But I think there are better ways to go about it. While testing your page I noticed that when
+a cat image takes up more then 60vh it goes past your footer. This makes it a bit strange when you can scroll down beoynd 
+the footer. 
+- So if you would set the "cat-container" to "overflow: hidden" you dont have to worry about a large
+image overflowing the height and width that you have set up on the container. 
+- remove margin-bottom 100px; since its not really doing anything for you anyway.
+-remove width 100% since its 100% as default
+- remove position absolut since its where you want it to be anyway
+
+
+
+3. Lorem Ipsum - Hans told me on the first Assignment we had that there once was a place for Lorem Ipsum but that he hoped
+to never have to see me use it again. Its better to ask chatgtp to just generate som random text.
+
+4. I noticed that some elements has faulty propertys. You are setting width with vh, for example @media (min-width: 901px)
+.general-info {width: 60vh;  And at the same time: @media (min-width: 901px)
+#catImage { width: 60vh; First its VW for width and WH for height. 
+And also, if you would have each at 60 VW it would take up 20VW more then there are room for since there can only be
+100 VW total. 
+
+
+5.body height: 100vh; I dont think its neccesary to set the height of the body to 100vh. So I tried and ticked it off in 
+the devtools at different viewports and it doesnt seem to do anything. 
+
+Well thats 5 things. 
+
+So to summarize my changes: 
+I fixed the responsiveness so it doesnt break anymore between 1220px and 899px by changing the fixed width of certain
+elements and adding dynamic values instead. 
+I changed multiple errors where width where set to viewheight instead of viewwidth. decreased the values of theese 
+propertys to accomendate to the total viewwidth. 
+changed the footer from an fixed absolut position to an dynamic responsive position depending on content-size.
+And some small changes here and there like removing auto propertys etc. 
